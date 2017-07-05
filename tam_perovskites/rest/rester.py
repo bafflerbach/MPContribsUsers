@@ -42,7 +42,7 @@ class TamPerovskitesRester(MPContribsRester):
             projection['content.' + key] = 1
         docs = self.query_contributions(criteria=self.tam_perovskites_query, projection=projection)
         if not docs:
-            raise Exception('No contributions found for DTU Explorer!')
+            raise Exception('No contributions found for Tam Perovskites Explorer!')
 
         mpfile = MPFile.from_contribution(docs[0])
         mp_id = mpfile.ids[0]
