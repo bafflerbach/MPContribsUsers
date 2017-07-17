@@ -34,7 +34,7 @@
 <h3>Overview Graph</h3>
 <div id="graph"></div>
 <script>
-requirejs(['main'], function() {
+requirejs(['config'], function() {
     require(["plotly"], function(Plotly) {
         $(document).ready(function(){
             var graph = document.getElementById('graph');
